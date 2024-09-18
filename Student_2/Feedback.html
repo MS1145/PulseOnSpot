@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Comments form </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Feedback.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Common_CSS/nav.css">
+	<link rel="stylesheet" href="Common_CSS/footer.css">
+
+	<script>
+
+		function alert_box() {
+			alert("Thank you for taking this time to give your feedback!!!!");
+		}
+
+		function cancel_box() {
+			alert("Your Message has been Cancelled!!")
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<div>
+		<nav class="navbar">
+			<a href="HomePage.html" style="color:rgb(255, 208, 0) ;size:10px"> 𝕻𝖚𝖑𝖘𝖊 𝖆𝖓𝖉 𝖘𝖕𝖔𝖙 </a>
+			<a href="../Student_4/Sports-ThumnailPage/Sports.html"> Sports </a>
+			<a href="../Student_2/Quiz-ThumnailPage/Quiz_thumbnail.html"> Quiz</a>
+			<a href="../Student_4/Gallery.html"> Gallery </a>
+			<a href="../Student_4/Sitemap.html"> Sitemap </a>
+			<a href="../Student_1/Store.html"> Store </a>
+			<a href="../Student_3/Aboutus.html"> About us </a>
+			<a href="Feedback.html"> Feedback </a>
+			<a href="../Student_2/ContactUs.html"> Contact us </a>
+			<div class="animation runner"></div>
+		</nav>
+	</div>
+
+	<div>
+		<form>
+			<fieldset>
+				<legend>How Satisfied are you with our Website:</legend>
+
+				<div>
+					<input type="radio" id="rating1" name="rating" value="rating1">
+					<label for="rating1">1</label>
+
+					<input type="radio" id="rating2" name="rating" value="rating2">
+					<label for="rating2">2</label>
+
+					<input type="radio" id="rating3" name="rating" value="rating3">
+					<label for="rating3">3</label>
+
+					<input type="radio" id="rating4" name="rating" value="rating4">
+					<label for="rating4">4</label>
+
+					<input type="radio" id="rating5" name="rating" value="rating5">
+					<label for="rating5">5</label>
+
+					<input type="radio" id="rating6" name="rating" value="rating6">
+					<label for="rating6">6</label>
+
+					<input type="radio" id="rating7" name="rating" value="rating7">
+					<label for="rating7">7</label>
+
+					<input type="radio" id="rating8" name="rating" value="rating8">
+					<label for="rating8">8</label>
+
+					<input type="radio" id="rating9" name="rating" value="rating9">
+					<label for="rating9">9</label>
+
+					<input type="radio" id="rating10" name="rating" value="rating10">
+					<label for="rating10">10</label>
+				</div>
+
+				<br><br><br><br>
+
+				<h3>Feedback Form</h3>
+
+
+				<div>
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<label for="country">Country</label>
+					<select id="country" name="Country">
+						<option value=""> Select country </option>
+						<option value="United Kingdom"> united Kingdom </option>
+						<option value="Sri Lanka"> Sri Lanka </option>
+						<option value="India"> India </option>
+						<option value="France"> France </option>
+						<option value="Canada"> Canada </option>
+						<option value="Australia"> Australia</option>
+					</select>
+
+					<label for="emailaddress">Email Address</label>
+					<input type="text" id="emailaddress" name="emailaddress" placeholder="Your Email Address..">
+
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something.."
+						style="height:150px"></textarea>
+
+					<input type="button" onclick="cancel_box()" value="Cancel">
+					<input type="button" onclick="alert_box()" value="Send">
+
+				</div>
+			</fieldset>
+
+		</form>
+	</div>
+
+	<footer>
+		<div class="footer-container">
+			<div class="team-section">
+				<h2 style="text-align:left">MEET THE TEAM</h2>
+				<p>We are a team who are passionate about our work and dedicated to providing the best service to our
+					clients.</p>
+				<ul class="team-list" style="text-align:left">
+					<!-- PUT THE EDITORS PAGE FOR THE LINKS -->
+					<li><a href="#">SANTOSH MANOHARADAS</a></li>
+					<li><a href="PageEditor-Kabreeth/Kabreeth.html">MOHAMED RAFEEK KABREETH AHMAR</a></li>
+					<li><a href="#">SUDESH THAROOSH</a></li>
+					<li><a href="#">PAMUDI UTTARA NANAYAKKARA</a></li>
+				</ul>
+			</div>
+
+			<div class="contact-section">
+				<h2 style="text-align:right">Contact Us</h2>
+				<div class="contact-list" style="text-align:right">
+					<div class="phoneNo"> <a href="tel:+1234567890">+94 76 702 1010</a></div>
+					<div class="mail"> <a href="mailto:kabreethahmar@gmail.com">kabreeth.20221129@iit.ac.lk</a></div>
+					<div class="address">57 Ramakrishna Rd, Colombo 00600</div>
+				</div>
+				<div class="follow-us">
+					<h2 style="text-align:right; padding-top:15px">Follow Us</h2>
+					<ul class="social-media">
+						<li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://m.facebook.com/login/?refsrc=deprecated"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li><a
+								href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+									class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<footer style="background-color: #333; font-size: 20px; color: #fff; padding: 20px; text-align: center;">&copy; 2023
+		Feedback | All rights reserved.</footer>
+
+</body>
+
+</html>

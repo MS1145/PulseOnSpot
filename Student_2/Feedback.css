@@ -1,0 +1,31 @@
+
+body {
+  font-family: bebas neue, sans-serif;
+  background-image: url("Sub-Background.jpg");
+  background-size: 100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,1.00);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+h3
+{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: rgb(11, 170, 209);
+	-webkit-text-stroke: 1px #282828;
+	text-shadow: 0px 4px 4px #282828;
+	font-size: 30px;
+	
+}
+legend {
+  padding-top: 80px;
+}
+

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  background-image: url("../image/Sub-Background.jpg");
+}
+
+.storeContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* Product section */
+
+.productContainer {
+  max-width: 70%;
+}
+
+.row {
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+
+.col img {
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.col p {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.Btn {
+  background-color: black;
+  font-size: 17px;
+  width: 60px;
+}
+
+/* cart section */
+
+.cartContainer {
+  max-width: 30%;
+  padding-top:75px;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 24px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 19px;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 9px;
+  font-size: 19px;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #ce1414;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #e56f6f;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  margin-right: 18px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 20px;
+}
+
+.btn-purchase {
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 20px;
+}

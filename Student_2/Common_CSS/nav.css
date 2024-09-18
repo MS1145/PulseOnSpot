@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+
+    /* margin:0 20px; */
+
+    background-color: #223e50d7;
+
+    position: fixed;
+
+    margin: 10px auto 0;
+
+    margin-bottom: 20px;
+
+    top: 0;
+
+    /* margin-right: 50px; */
+
+    /* margin:25px 10px; */
+
+    width: 99%;
+
+    height: 50px;
+
+    border-radius: 8px;
+
+    font-size: 0;
+
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	
+    z-index: 1;
+
+}
+
+
+
+.navbar a {
+
+    font-size: 15px;
+
+    text-transform: uppercase;
+
+    color: rgb(187, 185, 185);
+
+    text-decoration: none;
+
+    line-height: 50px;
+
+    position: relative;
+
+    z-index: 1;
+
+    display: inline-block;
+
+    text-align: center;
+
+}
+
+nav .animation {
+
+    position: absolute;
+
+    height: 6px;
+
+
+
+    bottom: 0;
+
+    z-index: 0;
+
+    background: #1abc9c;
+
+    border-radius: 8px;
+
+    transition: all .3s ease 0s;
+
+}
+
+
+
+.navbar a:nth-child(1) {
+
+    width: 140px;
+
+
+
+}
+
+
+
+.navbar .start-home,
+a:nth-child(1):hover~.animation {
+
+    width: 140px;
+
+    left: 0;
+
+
+
+}
+
+/* -------------------------------------------- */
+
+.navbar a:nth-child(2) {
+
+    width: 140px;
+
+}
+
+.navbar a:nth-child(2):hover~.animation {
+
+    width: 140px;
+
+    left: 140px;
+
+}
+
+/* ----------------------------------- */
+
+.navbar a:nth-child(3) {
+
+    width: 140px;
+
+}
+
+.navbar a:nth-child(3):hover~.animation {
+
+    width: 140px;
+
+    left: 280px;
+
+}
+
+.navbar a:nth-child(4) {
+
+    width: 140px;
+
+}
+
+.navbar a:nth-child(4):hover~.animation {
+
+    width: 140px;
+
+    left: 420px;
+
+}
+
+.navbar a:nth-child(5) {
+
+    width: 140px;
+
+}
+
+.navbar a:nth-child(5):hover~.animation {
+
+    width: 140px;
+
+    left: 560px;
+
+}
+
+.navbar a:nth-child(6) {
+
+    width: 140px;
+
+}
+
+.start-time,
+.navbar a:nth-child(6):hover~.animation {
+
+    width: 140px;
+
+    left: 700px;
+
+
+
+}
+
+.navbar a:nth-child(7) {
+
+    width: 140px;
+
+
+
+}
+
+.start-time,
+.navbar a:nth-child(7):hover~.animation {
+
+    width: 140px;
+
+    left: 840px;
+
+
+
+}
+
+
+
+.navbar a:nth-child(8) {
+
+    width: 140px;
+
+}
+
+.start-time,
+.navbar a:nth-child(8):hover~.animation {
+
+    width: 140px;
+
+    left: 980px;
+
+}
+
+.navbar a:nth-child(9) {
+
+    width: 140px;
+
+}
+
+.start-time,
+.navbar a:nth-child(9):hover~.animation {
+
+    width: 140px;
+
+    left: 1120px;
+
+}
+
+.navbar a:hover {
+
+    color: #08f8c8;
+
+    background-color: #10222ed7;
+
+    transition: all .3s ease 0s;
+
+    border-radius: 3px;
+
+}
+
+.navbar a:first-child:hover {
+    border-radius: 8px 0 0 0px;
+}

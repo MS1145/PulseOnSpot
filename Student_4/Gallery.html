@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Gallery/gallery.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Common_CSS/nav.css">
+	<link rel="stylesheet" href="Common_CSS/footer.css">
+
+
+<title>Gallery</title>
+
+</head>
+<body>
+
+		<nav class="navbar">
+		  <a href="../Student_2/HomePage.html"> 𝕻𝖚𝖑𝖘𝖊 𝖆𝖓𝖉 𝖘𝖕𝖔𝖙 </a>
+		  <a href="Sports-ThumnailPage/Sports.html"> Sports </a>
+		  <a href="../Student_2/Quiz-ThumnailPage/Quiz_thumbnail.html"> Quiz</a>
+		  <a href="Gallery.html"> Gallery </a>
+		  <a href="Sitemap.html"> Sitemap </a>
+		  <a href="../Student_1/Store.html"> Store </a>
+		  <a href="../Student_3/Aboutus.html"> About us </a>
+		  <a href="../Student_2/Feedback.html"> Feedback </a>
+		  <a href="../Student_2/ContactUs.html"> Contact us </a>
+		  <div class="animation runner"></div>
+		</nav>
+
+<!-- Section1: Title image -->
+    <div class="container">
+        <div class="row">
+            <div class="title_area">
+                <img class="bg_image" src="Gallery/gallery_title_image.jpeg" alt="title_picture" style="width:100%">
+                <h2 class="title">Gallery</h2>
+            </div>
+        </div>
+
+        <br><br><br>
+<!-- Section2: Change background  -->
+        <p class="subtopic1">Change background color</p>
+        
+        <div class="row">
+            <div class="buttons">
+                <!-- onclick functions are used to change the background color of the webpage  -->
+                <button onclick="changeBgColor('yellow')" class="button1" ><b>Yellow</b></button>
+                <button onclick="changeBgColor('pink')" class="button2"><b>Pink</b></button>
+                <button onclick="changeBgColor('purple')" class="button3"><b>Blue</b></button>
+                <button onclick="changeBgColor('orange')" class="button4"><b>Orange</b></button>
+                <button onclick="changeBgColor('random')" class="button5"><b>Random</b></button>
+                <button onclick="changeBgColor('original')" class="button6"><b>Original</b></button>    
+            </div>
+        </div>
+
+        <br><br>
+<!-- Section3: Change font size  -->        
+        <p class="subtopic1">Change font size</p><br>
+        <div class="row">
+            <div class="buttons">
+                <!-- onclick functions are used to change the font size of the image description and the content of the webpage  -->
+                <span onclick="changeTextSize('small')" class="text-size-btn1">A</span>
+                <span onclick="changeTextSize('medium')" class="text-size-btn2">A</span>
+                <span onclick="changeTextSize('large')" class="text-size-btn3">A</span>
+            </div>
+        </div>
+
+        <br><br><br>
+<!-- Section4: Main topic  -->
+        <h1 class="maintopic">SPORTING MOMENTS</h1><br>
+        <p class="subtopic2">Gallery of events in sports</p><br>
+        <p class="subtopic1" id="topic"> <b>Sports can always be a celebration! </b> Winning or losing is never the matter.<br>Events in sports  make it the grandstand for sportsmen and sportswomen  around the globe <br> to join hands and celebrate their sportsmanship.</p>
+
+<!-- Section5: Enlarged picture appearing space  -->
+        <!-- Creating div tag for the image to appear after the click -->
+        <div class="row">
+            <div class="enlarged-image-description" id="enlargedImgArea">
+                    <!-- Funtion to close the enlarged image -->
+                    <span class="close" onclick="closeEnlargedImage()">&times;</span>  
+                    <!-- area where the enlarged image appears, it is kept "display:none" until a thumbnail is clicked on --> 
+                    <div>
+                        <img class="big_image" src="Gallery/cricket1.png" alt="default" id="enlargedImg">
+                    </div>
+                    <span></span>
+                    <div class="column2">
+                        <p id="description"></p>
+                    </div>             
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br><br><br>
+<!-- Section6: Thumbnail collage  -->
+    <!-- openEnlargedImage function is called to the <img> tag of each thumbnail, which the enlarge the image and make it appear in the "Enlarged picture appearing space".-->
+    <!-- Javascript is used to implement the onlick function. the function extracts the img src as the 'pic', and the alt text as the 'desc'  -->
+    <div class="img-gallery">
+        <!-- picture1  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/cricket1.png" alt="<b>ICC Test Match</b> <br><br> ICC Cricket's longest format, test matches, last five days and feature two foreign sides. A team's ability, stamina, and mental fortitude are put to the utmost test in test cricket. The International Cricket Council (ICC) regulates Test cricket and oversees all games contested between members of the organization. The squad that gets the most runs throughout the duration of the game—two innings of batting and bowling from each team—wins. Many cricket supporters and players view Test cricket as the sport's pinnacle. Test cricket has a long past." onclick="openEnlargedImage(this.src,this.alt);" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>ICC Test Match</b></p>
+            </div>
+        </div>
+        <!-- picture2  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/cricket2.png" alt="<b>ICC T20 </b><br><br> The ICC T20I (International Cricket Council Twenty20 International) is a version of cricket where each side plays one session, with a total of 20 overs allowed. It is a comparatively new format that was first used in 2005 and has since grown to be one of the most well-liked varieties of cricket all over the globe. T20 cricket is renowned for its frantic, thrilling gaming, which frequently includes powerful batters and adept bowlers. The International Cricket Council, which oversees the ICC T20I, hosts national teams from all over the world in several competitions and games to crown the global champion in this format." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>ICC T20</b></p>
+            </div>
+        </div>
+        <!-- picture3  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/cricket3.png" alt="<b> Asia Cup </b><br><br>Cricket teams from Asia, including those from India, Pakistan, Sri Lanka, Bangladesh, Afghanistan, and the United Arab Emirates, compete in the Asia Cup. The Asian Cricket Council (ACC) hosts the event, which usually takes place every two years but has recently had an erratic timetable. The tournament's structure has changed over the years, but it usually starts with a round-robin group play and ends with knockout contests. One of the most important cricket competitions in Asia, the Asia Cup has been held annually since 1984. With renowned players and teams displaying their prowess and vying for the title of Asian champions, the event has witnessed some of the most memorable moments in Asian cricket history." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>Asia Cup</b></p>
+            </div>
+        </div>
+        <!-- picture4  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/cricket4.png" alt="<b> IPL </b><br><br>The Indian Premier League (IPL) is an annual competitive Twenty20 cricket competition that takes place in India from March to May. The Board of Control for Cricket in India (BCCI) established it in 2008, and since then it has grown to be one of the most well-known and lucrative cricket competitions in the globe. Eight teams, each made up of both domestic and foreign players, compete in the competition, representing different Indian cities and areas. The IPL is well-known for its intense contests, devoted spectators, and substantial influence on the expansion and improvement of cricket in India and elsewhere." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>IPL</b></p>
+            </div>
+        </div>
+        <!-- picture5  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/football1.png" alt="<b> FIFA World Cup </b><br><br>FIFA (Fédération Internationale de Football Association), the organization that oversees international football, organizes the FIFA World Cup. The most important and well-known football tournament in the world, it is conducted every four years. Teams from all over the globe are competing in the tournament, and each squad is representing a different nation. The tournament comprises of a group stage, knockout rounds, and a championship game to crown the World Cup victor. Since the 1930 FIFA World Cup, which was the first to be conducted, it has taken place every four years, except for 1942 and 1946 because of World War II. The current format involves 32 teams competing for the title, and the most successful team in the tournament's history is Brazil, with five titles to their name." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>FIFA World Cup</b></p>
+            </div>
+        </div>
+        <!-- picture6  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/football2.png" alt="<b> UEFA Champions League </b><br><br> The Union of European Football Associations hosts the UEFA Champions League, a yearly football team tournament. (UEFA). The best football teams from Europe's local divisions compete in one of the most renowned club tournaments in the world. The competition is divided into several phases, beginning with the preliminary rounds and concluding with the final, which is typically conducted in May. The champion of the UEFA Champions League advances for the following year's competition as well as the FIFA Club World Cup. The competition has a long past, featuring several noteworthy events and contributions from some of the best footballers in history." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>UEFA Champions League </b></p>
+            </div>
+        </div>
+        <!-- picture7  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/football3.png" alt="<b>La Liga</b> <br><br> La Liga, also known as the Campeonato Nacional de Liga de Primera División, is the top professional football league in Spain. It is one of the most prestigious and competitive football leagues in the world, featuring some of the top clubs and players in the sport. The league consists of 20 teams who play against each other twice during a season, with the team that accumulates the most points being crowned as the champions. Some of the most famous and successful clubs in La Liga include Real Madrid, Barcelona, and Atletico Madrid, and the league has produced some of the greatest footballers of all time such as Lionel Messi and Cristiano Ronaldo." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>La Liga</b></p>
+            </div>
+        </div>
+        <!-- picture8  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/football4.png" alt="<b>UEFA European Championship</b> <br><br>Every four years, a significant international football competition called the UEFA European Championship, or the Euros, is held. The Union of European Football Associations (UEFA) oversees organizing the tournament, which includes national sides from across Europe. The competition comprises of a group stage, knockout stages, and a final to decide the champion. Along with the FIFA World Cup, the UEFA European Championship debuted in 1960 and has since grown to be one of the most important football competitions in the world. Portugal is the reigning winner after winning the competition in 2016. The following UEFA European Championship is slated for 2024." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>UEFA European Championship</b></p>
+            </div>
+        </div>
+        <!-- picture9  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/basketball1.png" alt=" <b>NBA</b><br><br> North American professional men's basketball is played in the National Basketball Association (NBA). A total of 30 clubs makes up the division, with 29 from the US and 1 from Canada. Players from all over the world compete in the NBA, which is regarded as the best professional basketball competition in the world. The best eight teams from each conference advance to the postseason after the regular season, which goes from October to April. The winner of the league is decided by the NBA Finals, which are held in June. Some of the largest names in basketball have fought in the NBA over the years, and the league has a rich past and many famous players as its residents." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>NBA</b></p>
+            </div>
+        </div>
+        <!-- picture10  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/basketball2.png" alt="<b>FIBA Basketball World Cup</b><br><br> The FIBA Basketball World Cup is the top international basketball competition run by the International Basketball Federation. (FIBA). National teams from all over the globe compete for the title of world champion in this event, which is conducted every four years. Before the primary tournament, which includes 32 teams, there is a qualification period in which teams participate in regional competitions. Some of the best basketball athletes and teams in history have competed in and won the FIBA Basketball World Cup, which dates back to 1950." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>FIBA Basketball World Cup</b></p>
+            </div>
+        </div>
+        <!-- picture11  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/rugby1.png" alt="<b>Rugby League World Cup</b><br><br> The Rugby League globe Cup is an international competition that draws together the best Rugby League countries from all over the globe every four years. The competition debuted in 1954 and has since grown to be one of Rugby League's most esteemed occasions. Teams from Australia, New Zealand, England, and several other countries participate in the tournament to win the title of global champion. The tournament's structure has changed over the years, but it consists of a group stage, followed by knockout stages, with the winner being named global champion. Rugby League fans from all over the globe look forward to the Rugby League globe Cup, which is regarded as one of the sport's most thrilling and competitive competitions." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>Rugby League World Cup</b></p>
+            </div>
+        </div>
+        <!-- picture12  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/rugby2.jpg" alt="<b>Six Nation's Championship</b><br><br> The Guinness Six Nations, also known as the Six Nations Championship, is a yearly international rugby union competition that pits the national sides of six different European countries against one another: England, France, Ireland, Scotland, and Wales. There are a total of 15 contests played during the six-week championship, with each squad facing the other five teams once. The competition, which has been conducted every year since its founding in 1883 and is the oldest rugby championship in the world, is regarded as one of the most important in the sport of rugby union. Rugby fans around the globe look forward to this game every year despite changes to the regulations and structure over time." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>Six Nation's Championship</b></p>
+            </div>
+        </div>
+        <!-- picture13  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/hockey1.jpg" alt="<b>World Cup of Hockey</b><br><br> A worldwide ice hockey competition, the World Cup of Hockey is authorized by the worldwide Ice Hockey Federation (IIHF). The most recent competition took place in 2016, but it was first played in 1996. Since then, it has been performed sporadically. The competition includes national teams from all over the globe, including, among others, those from Canada, the United States, Russia, Sweden, Finland, and the Czech Republic. Some of the best players from all over the world attend the competition, which is regarded as a significant event in the world of ice hockey." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>World Cup of Hockey</b></p>
+            </div>
+        </div>
+        <!-- picture14  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/hockey2.png" alt="<b>Champions Hockey League</b><br><br> Professional teams from Europe compete in the Champions Hockey League (CHL), a yearly ice hockey competition. One of the most prestigious ice hockey tournaments in Europe, it was first created in 2014 and has since expanded to impressive proportions. 32 teams representing 13 nations compete in the competition, which usually lasts from August to February. In the group stage, each squad competes in six games and is split into eight groups of four. The best two teams from each group then progress to the knockout stage, which ends with a single-game championship match. The CHL is renowned for the intense rivalry it fosters, and it has hosted many of the best ice hockey teams and athletes from across Europe." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>Champions Hockey League</b></p>
+            </div>
+        </div>
+        <!-- picture15  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/E-sport1.png" alt="<b>League of Legends World Championship</b> <br><br>The largest and most important worldwide gaming competition for the well-known online game League of Legends is the League of Legends World Championship, or Worlds for short. The world's top elite teams participate in it, which Riot Games organizes, to win the title of world winner. The competition usually lasts for several weeks during the group stage and elimination rounds before concluding with a championship game. The victorious team secures their spot in League of Legends annals as the greatest team in the world for that year in addition to receiving a sizeable reward fund." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>League of Legends <br>World Championship</b></p>
+            </div>
+        </div>
+        <!-- picture16  -->
+        <div class="sport-image">
+            <a href="#enlargedImgArea"><img  src="Gallery/E-sports2.jpg" alt="<b>Fortnite World Cup</b><br><br> The famous online video game Fortnite serves as the backdrop for the yearly Fortnite World Cup. Both solo and cooperative gameplay options are available, and it was first conducted in 2019. Anyone who meets the requirements through area internet qualifiers may enter the contest. Players compete in the ultimate event over a number of days for a multi-million-dollar reward fund. In the realm of esports, the Fortnite realm Cup is regarded as one of the largest and most prestigious competitions." onclick="openEnlargedImage(this.src,this.alt)" >
+            </a>
+            <div class ="image-text">
+                <p class="sports-image-text"><b>Fortnite World Cup</b></p>
+            </div>
+        </div>
+    </div>
+     
+    <script src="Gallery/Gallery.js"> </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="team-section">
+                <h2 style="text-align:left">MEET THE TEAM</h2>
+                <p>We are a team who are passionate about our work and dedicated to providing the best service to our
+                    clients.</p>
+                <ul class="team-list" style="text-align:left">
+                    <!-- PUT THE EDITORS PAGE FOR THE LINKS -->
+                    <li>SANTOSH MANOHARADAS</li>
+                    <li>MOHAMED RAFEEK KABREETH AHMAR</li>
+                    <li>SUDESH THAROOSH</li>
+                    <li>PAGE EDITOR: <a href="PageEditor-Pamudi/Pamudi.html"> PAMUDI UTTARA NANAYAKKARA</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <h2 style="text-align:right">Contact Us</h2>
+                <div class="contact-list" style="text-align:right">
+                    <div class="phoneNo"> <a href="tel:+1234567890">+94 76 573 8212</a></div>
+                    <div class="mail"> <a href="mailto:kabreethahmar@gmail.com">kabreeth.20221129@iit.ac.lk</a>
+                    </div>
+                    <div class="address">57 Ramakrishna Rd, Colombo 00600</div>
+                </div>
+                <div class="follow-us">
+                    <h2 style="text-align:right; padding-top:15px">Follow Us</h2>
+                    <ul class="social-media">
+                        <li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://m.facebook.com/login/?refsrc=deprecated"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer style="background-color: #333; font-size: 20px; color: #fff; padding: 20px; text-align: center;">&copy; 2023 Gallery | All rights reserved.</footer>
+
+</body>
+</html>

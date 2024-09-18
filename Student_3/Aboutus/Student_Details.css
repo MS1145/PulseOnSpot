@@ -1,0 +1,182 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("Sub-Background.jpg");
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.container .box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+
+.container .box:hover {
+  z-index: 1;
+  transform: scale(1.25);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+.container .box .image_box_S1 .image_box_S2 .image_box_S3 .image_box_S4 {
+  position: absolute;   /*positioned relative to its closest positioned ancestor element*/
+  top: 0;              /*top/left: 0, positioned at the top-left corner*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Adding the colors to each box */
+.container .box .image_box_S1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #e66400, #000);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+.container .box .image_box_S2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #95F167, #000);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+.container .box .image_box_S3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #e6b800, #000);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+.container .box .image_box_S4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #f4219f, #000);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+/* Hovering effect, this displays with the color */
+/* https://www.w3schools.com/css/css_background.asp */
+.container .box:hover .image_box_S1:before {
+  opacity: 1;
+}
+
+.container .box:hover .image_box_S2:before {
+  opacity: 1;
+}
+
+.container .box:hover .image_box_S3:before {
+  opacity: 1;
+}
+
+.container .box:hover .image_box_S4:before {
+  opacity: 1;
+} 
+
+
+/*created a class next img scr to cover the photo in the box*/
+.image_fit {        
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+
+
+.container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;     /*works on positioned elements*/
+  display: flex;
+  padding: 18px;
+  margin: -10px;    
+  align-items: flex-end;
+}  
+
+
+/* Names pop when hovering */
+.container .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+} 
+
+
+/* Hovering effect for the name*/
+.container .box:hover .content h2 {
+  transform: translateY(0);
+  transition-delay:0.6s;
+  font-size: 25px;
+}
+
+
+/* Student details pop when hovering */
+.container .box .content p {
+  color: #fff;
+  transform: translateY(200px);
+  transition: 0.5s;
+  font-size: 17px;
+}
+
+
+/* Hovering effect for the student details */
+.container .box:hover .content p {
+  transform: translateY(0);
+  transition-delay:0.7s;
+}
+
+

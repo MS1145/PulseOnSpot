@@ -1,0 +1,263 @@
+footer {
+
+    background-color: #dedddd;
+
+    padding: 30px;
+
+}
+
+.footer-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+}
+
+.team-section {
+
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.team-section h2 {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+.team-section p {
+
+    font-size: 21px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+}
+
+.team-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.team-list li {
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+
+}
+
+.team-list a {
+
+    color: #5f5d5d;
+
+    text-decoration: none;
+
+}
+
+.team-list a:hover {
+
+    color: #2a2a2a;
+
+}
+
+.contact-section {
+
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.contact-section h2 {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+.contact-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.contact-list li {
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+
+}
+
+.contact-list i {
+
+    margin-right: 10px;
+
+    color: #666;
+
+}
+
+.contact-list a {
+
+    font-size: 19px;
+
+    color: #666;
+
+    text-decoration: none;
+
+}
+
+.contact-list a:hover {
+
+    color: #333;
+
+}
+
+.social-media {
+
+    display: flex;
+
+    padding: 20px;
+
+}
+
+.follow-us {
+
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.social-media h2 {
+
+    font-size: 25px;
+
+}
+
+.social-media li {
+
+    margin-right: 10px;
+
+}
+
+.social-media li:last-child {
+
+    margin-right: 0;
+
+}
+
+.social-media a {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background-color: #333;
+
+    color: #fff;
+
+}
+
+.social-media i {
+
+    font-size: 20px;
+
+}
+
+.address {
+
+    font-size: 19px;
+
+}
+
+.fa {
+
+    padding: 20px;
+
+    font-size: 30px;
+
+    width: 50px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    margin: 5px 2px;
+
+    border-radius: 50%;
+
+}
+
+.fa:hover {
+
+    opacity: 0.7;
+
+}
+
+/* Facebook */
+
+.fa-facebook {
+
+    color: white;
+
+}
+
+/* Twitter */
+
+.fa-twitter {
+
+    color: white;
+
+}
+
+/* Instagram */
+
+.fa-instagram {
+
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer-container {
+
+        flex-direction: column;
+
+    }
+
+    .team-section,
+
+    .contact-section {
+
+        width: 100%;
+
+    }
+
+}

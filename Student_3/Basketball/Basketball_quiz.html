@@ -1,0 +1,136 @@
+<!-- BASKETBALL -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasketballTrivia!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="icon" type="image/x-icon" href="../logo.png">
+    <link rel="stylesheet" href="Basketball_quiz.css">
+    <link rel="stylesheet" href="../Common_CSS/nav.css">
+
+</head>
+
+<body onload="NextQuestion(0)">
+
+    <div>
+
+        <nav class="navbar">
+
+            <a href="../HomePage.html" style="color:rgb(255, 208, 0) ;font-size:10px"> 𝕻𝖚𝖑𝖘𝖊 𝖆𝖓𝖉 𝖘𝖕𝖔𝖙 </a>
+
+            <a href="../../Student_4/Sports-ThumnailPage/Sports.html"> Sports </a>
+
+            <a href="../../Student_2/Quiz-ThumnailPage/Quiz_thumbnail.html"> Quiz</a>
+
+            <a href="../../Student_4/Gallery.html"> Gallery </a>
+
+            <a href="../../Student_4/Sitemap.html"> Sitemap </a>
+
+            <a href="../../Student_1/Store.html"> Store </a>
+
+            <a href="../../Student_3/Aboutus.html"> About us </a>
+
+            <a href="../../Student_2/Feedback.html"> Feedback </a>
+
+            <a href="../../Student_2/ContactUs.html"> Contact us </a>
+
+            <div class="animation runner"></div>
+
+        </nav>
+
+    </div>
+
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Congratulations, Quiz Completed.</h1>
+
+                <div class="grade-details">
+                    <p id="userName"></p>
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p>You took <span id="time-display"></span> seconds to complete the quiz.</p>
+                    <p><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button
+                        onclick="closeScoreModal(); location.href='../../Student_4/Sports-ThumnailPage/Sports.html'">Quit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-quiz-container">
+
+            <h1>Time Left: <span id="time-header"></span></h1>
+
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1>Question : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question">QUIZ</h1>
+            </div>
+
+            <div class="game-options-container">
+
+                <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                        <h1>Please Pick An Option</h1>
+
+                        <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA">
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB">
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC">
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD">
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="Basketball_quiz.js"></script>
+</body>
+
+</html>

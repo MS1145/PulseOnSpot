@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" href="CSS/checkout.css">
+	<link rel="stylesheet" href="CSS/footer.css">
+	<link rel="stylesheet" href="CSS/nav.css">
+	<script src="store.js"></script>
+	<title>Checkout Page</title>
+</head>
+
+
+<body>
+	<div class="Container">
+		<!-- references  https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+		<div style="padding:0; margin:0">
+			<nav class="navbar">
+				<a href="../Student_2/HomePage.html" style="color:red ;font-size:10px"> 𝕻𝖚𝖑𝖘𝖊 𝖆𝖓𝖉 𝖘𝖕𝖔𝖙
+				</a>
+				<a href="../Student_4/Sports-ThumnailPage/Sports.html"> Sports </a>
+				<a href="../Student_2/Quiz-ThumnailPage/Quiz_thumbnail.html"> Quiz</a>
+				<a href="../Student_4/Gallery.html"> Gallery </a>
+				<a href="../Student_4/Sitemap.html"> Sitemap </a>
+				<a href="Store.html"> Store </a>
+				<a href="../Student_3/Aboutus.html"> About us </a>
+				<a href="../Student_2/Feedback.html"> Feedback </a>
+				<a href="../Student_2/ContactUs.html"> Contact us </a>
+				<div class="animation runner"></div>
+			</nav>
+		</div>
+		<div class="container">
+			<form name="form" onsubmit="return formValidate()">
+				<div class="row">
+					<div class="col-50">
+						<h3>Billing Address</h3>
+						<label for="fname">Full Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Enter full name">
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email" placeholder="Enter email">
+						<label for="adr">Address</label>
+						<input type="text" id="adr" name="address" placeholder="Enter address">
+						<label for="city">
+							City</label>
+						<input type="text" id="city" name="city" placeholder="Enter city">
+
+						<div class="row">
+							<div class="col-50">
+								<label id="state">District</label>
+								<input type="text" id="district" name="district" placeholder="Colombo">
+							</div>
+							<div class="col-50">
+								<label for="zip">Zip</label>
+								<input type="number" id="zip" name="zip" placeholder="10001">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-50">
+						<h3>Payment</h3>
+						<label for="fname">Accepted Cards</label>
+						<div class="icon-container">
+							<img src="image/card.png" alt="">
+						</div>
+						<label for="cname">Name on Card</label>
+						<input type="text" id="cname" name="cardname" placeholder="Enter name">
+						<label for="ccnum">Credit card number</label>
+						<input type="number" id="ccnum" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+						<label for="expmonth">Exp Month</label>
+						<input type="text" id="expmonth" name="expmonth" placeholder="September">
+						<div class="row">
+							<div class="col-50">
+								<label for="expyear">Exp Year</label>
+								<input type="number" id="expyear" name="expyear" placeholder="2018">
+							</div>
+							<div class="col-50">
+								<label for="cvv">CVV</label>
+								<input type="number" id="cvv" name="cvv" placeholder="352">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- formaction="home.html" function has to be added when mergeing  -->
+				<button type="submit" class="btn">Continue to checkout</button>
+			</form>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<footer>
+
+		<div class="footer-container">
+
+			<div class="team-section">
+
+				<h2 style="text-align:left">MEET THE TEAM</h2>
+
+				<p>We are a team who are passionate about our work and dedicated to providing the best service to our
+
+					clients.</p>
+
+				<ul class="team-list" style="text-align:left">
+
+					<!-- PUT THE EDITORS PAGE FOR THE LINKS -->
+
+					<li>PAGE EDITOR: <a href="editor.html">SANTOSH MANOHARADAS</a></li>
+
+					<li>MOHAMED RAFEEK KABREETH AHMAR</li>
+
+					<li>SUDESH THAROOSH</li>
+
+					<li>PAMUDI UTTARA NANAYAKKARA</li>
+
+				</ul>
+
+			</div>
+
+			<div class="contact-section">
+
+				<h2 style="text-align:right">Contact Us</h2>
+
+				<div class="contact-list" style="text-align:right">
+
+					<div class="phoneNo"> <a href="tel:+1234567890">+94 76 573 8212</a></div>
+
+					<div class="mail"> <a href="mailto:santoshmanoharadas@gmail.com">santosh.20220967@iit.ac.lk</a>
+
+					</div>
+
+					<div class="address">57 Ramakrishna Rd, Colombo 00600</div>
+
+				</div>
+
+				<div class="follow-us">
+
+					<h2 style="text-align:right; padding-top:15px">Follow Us</h2>
+
+					<ul class="social-media">
+
+						<li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-facebook"></i></a></li>
+
+						<li><a href="https://m.facebook.com/login/?refsrc=deprecated"><i class="fa fa-twitter"></i></a>
+
+						</li>
+
+						<li><a
+								href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+									class="fa fa-instagram"></i></a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+	<footer style="background-color: #333; font-size: 20px; color: #fff; padding: 20px; text-align: center;">&copy; 2023
+		checkout
+
+		| All rights reserved.</footer>
+
+
+</body>
+
+</html>

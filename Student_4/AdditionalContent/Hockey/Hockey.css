@@ -1,0 +1,136 @@
+#contact {
+
+    position: absolute;
+
+    top: -24px;
+
+    left: 230px;
+
+    line-height: 35px;
+
+    width: 120px;
+
+    border-radius: 30px;
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    border: none;
+
+    text-transform: uppercase;
+
+    background-color: #0fdaae;
+
+    outline: none;
+
+    text-decoration: none;
+
+    color: rgb(68, 63, 63);
+
+    cursor: pointer;
+
+    transition: all .4s ease 0s;
+
+}
+
+#contact:hover {
+
+    background-color: #f03e3e;
+
+    color: rgb(15, 15, 15)
+}
+
+.main-section {
+
+    padding: 350px;
+
+    text-align: center;
+
+    background-color: #474e5d;
+
+    /* background-color: #121824; */
+
+    color: white;
+
+    background-image: url("Hockey.jpg");
+
+    background-size: 100%;
+
+    background-repeat: no-repeat;
+
+}
+
+.centered {
+
+    color: black;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 100px;
+
+}
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+body {
+
+    background-image: url("Sub-Background.jpg");
+
+    background-size: 100%;
+
+}
+
+.center {
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 50%;
+
+    padding: 20px;
+
+}
+
+p {
+
+    color: black;
+
+    font-size: 20px;
+
+    padding: 20px;
+
+}
+
+ul {
+
+    color: black;
+
+    font-size: 20px;
+
+    padding: 20px;
+
+}
+
+li {
+
+    color: black;
+
+    font-size: 20px;
+
+    padding: 20px;
+
+}

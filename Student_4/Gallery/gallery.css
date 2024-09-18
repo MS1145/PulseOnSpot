@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{  margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to left,#3F5EFB,#ED4C67,#e84393);
+    font-family: 'Poppins', sans-serif;      
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.row{
+    display: flex;
+}
+
+/*Section1: Title image */
+
+.title_area{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bg_image {
+    width: 100%;
+    height: 100vh;
+    filter: blur(3px);    
+}
+
+.title{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    top: 50%; /*Take the image to the middle of the div*/
+    width:100%;
+    text-align: center;
+    font-size: 100px;
+    font-family: Bahnschrift Condensed;
+    text-shadow: 2px 2px 5px rgb(106, 103, 103);
+}
+.title_area{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+/* Section2: Change background */
+.buttons{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    position: relative;
+    align-items: center;    
+}
+
+.buttons button{
+    border:none;
+    border-radius: 6px;
+    height: 60px;
+    min-width: 150px;
+    margin: 30px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    color:#fff;
+    background-size: 200%;
+    transition: 0.8s;
+    box-shadow: 4px 7px 7px 0px #00000036;
+}
+
+.maintopic{
+    align-items: center;
+    color:white;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.subtopic1 {
+    align-items: center;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+}
+.subtopic2{
+    align-items: center;
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.button1{
+    background-image: linear-gradient(to left,#ffeaa7,#F79F1F,#fdcb6e);     
+}
+
+.button2{
+    background-image: linear-gradient(to left,#fd79a8,#ED4C67,#e84393);       
+}
+
+.button3{
+    background-image: linear-gradient(to left,#a29bfe,#5758BB,#a29bfe);      
+}
+
+.button4{
+    background-image: linear-gradient(to left,#fab1a0,#EE5A24,#e17055);      
+}
+
+.button5{
+    background-image: linear-gradient(to left,#FFC312,#C4E538,#12CBC4,#fd79a8);     
+}
+
+.button6{
+    background-image: linear-gradient(to left,#3F5EFB,#ED4C67,#e84393);   
+}
+/* creates the gradient effect */
+.buttons button:hover{
+    background-position: right;
+}
+
+
+/*Section3: Change font size*/
+
+/*Font size change buttons*/
+.buttons span{
+    padding: 0 10px;
+    display: flex;
+    background-color:#ffbd03;
+    margin-left:10px;
+    width:50px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 4px 7px 7px 0px #00000036;
+    cursor: pointer;
+}
+.text-size-btn1{
+    font-size: 15px;
+    transition: 400ms;
+    overflow: hidden;
+}
+/*Hovering effect on font size change buttons*/
+.text-size-btn1:hover{
+    transform: scale(1.03);
+}
+.text-size-btn2:hover{
+    transform: scale(1.03);
+}
+.text-size-btn3:hover{
+    transform: scale(1.03);
+}
+
+.text-size-btn2{
+    font-size: 25px;
+    transition: 400ms;
+    overflow: hidden;
+}
+.text-size-btn3{
+    font-size: 35px;
+    transition: 400ms;
+    overflow: hidden;
+}
+
+/*-------*/
+
+
+/*Enlarged picture appearing space*/
+
+.enlarged-image-description{
+    background-color: #f7f7f7;
+    margin: 150px auto 0 auto;
+    width: 70%;
+    border-radius: 20px;
+    border: 5px solid white;
+    display:none;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 4px 7px 7px 0px #00000036;    
+    position: relative;
+}
+.enlarged-image-description img{
+    height:30vw;
+    width: 100vh;
+    max-width: 620px;
+    min-height: 620px;
+    object-fit:cover;
+    display: flex;
+    padding: 0px;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+#description{
+    font-size: 15px;
+    margin-right: 40px;
+    text-align: justify;
+}
+.column2{
+    position: relative;
+}
+
+/* The cross mark */
+.close{
+    color:#363333a6;
+    float:right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top:0;
+    right:0;
+    padding-right: 6px;
+    
+}
+.close:hover,
+.close:focus{
+    color:#ED4C67;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*-------*/
+
+
+
+/*Section6: Thumbnail collage*/
+
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    /*To make the website responsive. When the webpage is minimzed, it will go up to 250px and then the item will jump to the next row*/
+    grid-gap:30px;
+    
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid #fdcd20fa;
+    border-radius: 20px;
+    box-shadow: 4px 7px 7px 0px #00000036;
+    transition: 400ms;
+    overflow: hidden;
+    
+}
+.img-gallery img:hover {
+    filter:brightness(.25); 
+    transform: scale(1.03);
+}
+.sport-image:hover .image-text{
+    opacity: 1;
+    pointer-events: none;
+}
+.sport-image{
+    position: relative;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 50%;
+    fill: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:end;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.5;
+    text-shadow: 2px 2px #00000036;
+    
+}
+
+
